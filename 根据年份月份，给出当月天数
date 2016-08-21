@@ -1,0 +1,15 @@
+
+function getDaysInMonth(y,M){
+  var days=0;
+  days=M==2?(y%4==0&&y%100!==0||y%400==0?29:28):
+	M=4||M=6||M=9||M=11?days=30:
+							31;
+	return days;
+  }
+  console.log(
+  getDaysInMonth(1998,4),
+  getDaysInMonth(2000,2),
+   getDaysInMonth(1993,3),
+    getDaysInMonth(1295,3),
+	 getDaysInMonth(1945,3)
+  );
